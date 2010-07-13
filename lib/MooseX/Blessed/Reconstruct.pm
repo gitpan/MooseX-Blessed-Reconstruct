@@ -12,7 +12,7 @@ use Scalar::Util qw(reftype);
 
 use namespace::clean -except => 'meta';
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 extends qw(Data::Visitor);
 
@@ -48,8 +48,6 @@ sub visit_object_with_meta {
 	my $args = $v->prepare_args( $meta, $obj );
 
 	$meta->new_object( %$args, __INSTANCE__ => $instance );
-
-	$instance->BUILDALL($args) if $instance->can("BUILDALL");
 
 	return $instance;
 }
@@ -104,7 +102,6 @@ from blessed placeholders
 	# equivalent to:
 
 	my $proper = Foo->meta->new_object(%$obj);
-	$proper->BUILDALL({%$obj});
 
 	# but recursive (and works with shared references)
 
@@ -137,8 +134,6 @@ reconstructed "properly".
 Uses the metaclass C<$meta> to create a new instance, registers the instance
 with L<Data::Visitor>'s cycle tracking, and then inflates it using
 L<Moose::Meta::Class/new_object>.
-
-After the object is built, C<BUILDALL> is called if the object implements it.
 
 =item prepare_args $obj
 

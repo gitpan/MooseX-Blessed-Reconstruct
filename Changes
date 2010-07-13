@@ -1,3 +1,6 @@
+0.04
+    - Update BUILDALL behavior for recent versions of Moose (doy)
+
 0.03
     - Class::MOP no longer returns the metaclass from load_class
 

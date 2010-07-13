@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.55.
+signed via the Module::Signature module, version 0.62.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,17 +14,17 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 56d6ae71a8db4dc3a29442e03006ab391e896c4e Changes
+SHA1 8e442a83c925d9d54f6e2da526c4a127bd73b877 Changes
 SHA1 78a468e5be41b2f15d15e6a989c94fba17c9a093 MANIFEST
 SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 b009f6fbbb8ce3eec6bc29b0b5715a0a661168c8 META.yml
-SHA1 c2629049084021b59ce2dd23019778f3fcee4958 Makefile.PL
-SHA1 ee675a0ed55083194c66f6a1d4ea55e680871ecf lib/MooseX/Blessed/Reconstruct.pm
+SHA1 e7a4399700f4f8481e357bee58acc36dfd1ed263 META.yml
+SHA1 8bfb42276336bae728712b029a18bc2d82914f84 Makefile.PL
+SHA1 de7e757558aa28a86f64829ae945eaf5091c6866 lib/MooseX/Blessed/Reconstruct.pm
 SHA1 a864e611614c3e25f55dd7174dc6f1f8922881a9 t/basic.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
 
-iEYEARECAAYFAkqyHmwACgkQVCwRwOvSdBiJhACghnFD9NmaT4a/U0i3CxGsV3PI
-hncAoKYTVu3LCt8sLasc1/tpDj+etWZi
-=/uwf
+iEYEARECAAYFAkw7rOEACgkQVCwRwOvSdBh4XwCfRasi0vD7xrRV/bQQLGZ4pDpd
+GBcAn1lHe20qX1zvUB96UD1uXy12ERI0
+=irHr
 -----END PGP SIGNATURE-----
