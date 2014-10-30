@@ -1,18 +1,23 @@
-#!/usr/bin/perl
-
 package MooseX::Blessed::Reconstruct;
+BEGIN {
+  $MooseX::Blessed::Reconstruct::AUTHORITY = 'cpan:YANICK';
+}
+# ABSTRACT: A L<Data::Visitor> for creating Moose objects from blessed placeholders
+
+
 use Moose;
 
 use Carp qw(croak);
 
-use Class::MOP 0.66; # well behaved load_class()
+use Class::MOP;
+use Class::Load;
 use Data::Visitor 0.21; # n-arity visit
 
 use Scalar::Util qw(reftype);
 
 use namespace::clean -except => 'meta';
 
-our $VERSION = "0.04";
+our $VERSION = "0.03";
 
 extends qw(Data::Visitor);
 
@@ -27,7 +32,7 @@ sub visit_object {
 
 	my $class = ref $obj;
 
-	Class::MOP::load_class($class) if $v->load_classes;
+	Class::Load::load_class($class) if $v->load_classes;
 
 	my $meta = Class::MOP::get_metaclass_by_name($class);
 
@@ -80,10 +85,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
-MooseX::Blessed::Reconstruct - A L<Data::Visitor> for creating Moose objects
-from blessed placeholders
+MooseX::Blessed::Reconstruct - A L<Data::Visitor> for creating Moose objects from blessed placeholders
+
+=head1 VERSION
+
+version 0.5
 
 =head1 SYNOPSIS
 
@@ -142,22 +152,25 @@ L<Moose::Meta::Class/new_object>.
 
 =back
 
-=head1 VERSION CONTROL
+=head1 AUTHORS
 
-This module is maintained using Darcs. You can get the latest version from
-L<http://nothingmuch.woobling.org/code>, and use C<darcs send> to commit
-changes.
+=over 4
 
-=head1 AUTHOR
+=item *
 
-Jonathan Rockway
+Yuval Kogman <nothingmuch@woobling.org>
 
-Yuval Kogman E<lt>nothingmuch@woobling.orgE<gt>
+=item *
 
-=head1 COPYRIGHT
+Jonathan Rockway <jrockway@cpan.org>
 
-	Copyright (c) 2008 Infinity Interactive, Yuval Kogman. All rights
-	reserved This program is free software; you can redistribute
-	it and/or modify it under the same terms as Perl itself.
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2008 by Infinity Interactive, Yuval Kogman.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
 
 =cut

@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.62.
+signed via the Module::Signature module, version 0.73.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,17 +14,27 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 8e442a83c925d9d54f6e2da526c4a127bd73b877 Changes
-SHA1 78a468e5be41b2f15d15e6a989c94fba17c9a093 MANIFEST
-SHA1 190e9058eb9c6446a1a3f3ddf15b082f1ecde152 MANIFEST.SKIP
-SHA1 e7a4399700f4f8481e357bee58acc36dfd1ed263 META.yml
-SHA1 8bfb42276336bae728712b029a18bc2d82914f84 Makefile.PL
-SHA1 de7e757558aa28a86f64829ae945eaf5091c6866 lib/MooseX/Blessed/Reconstruct.pm
+SHA1 5e9277a1d4916de8a61b52cd4de26111e5a6acd7 Build.PL
+SHA1 ec2c04a1df729425f0d5fe5e386f1db13562d221 CONTRIBUTORS
+SHA1 adf3176b0694a8010eb0c806d343077e135adaae Changes
+SHA1 1a436e7e1a8d13fe2eb2fb38fb51a5d6b27925ee INSTALL
+SHA1 77006c8a2d83c22187dcfcbe21c7735e42cb6dcd LICENSE
+SHA1 01c818d384fcef8ea036b83e9570c45bb39d2d71 MANIFEST
+SHA1 a13559534f99e8358ab3fb4f4633f335cac25906 META.json
+SHA1 d5baa59bf78a950b0db1c54acb7805225cbcf8fc META.yml
+SHA1 4db74d821e41551d01df8ede08e6cccaede5fd3f README
+SHA1 dac1d864f68c09092d06f4eb92ba9f9598e90847 README.mkdn
+SHA1 188e4d8966e0de32d8200666127978b958a94054 cpanfile
+SHA1 1d22da50cad7a8aaa370b1529e33102e7dd78ee1 doap.xml
+SHA1 bd4ff81654fb3fafa542e0eb65debef6929626ea lib/MooseX/Blessed/Reconstruct.pm
+SHA1 6d9e59bfaf0482e8af98b1e6a8d5189f0ab1eec7 t/00-compile.t
+SHA1 1eb2815ebbcb38fa90f4d8749221e8b5f99ca0aa t/000-report-versions-tiny.t
 SHA1 a864e611614c3e25f55dd7174dc6f1f8922881a9 t/basic.t
+SHA1 d1fe7d94b3edc7847eb187d4ee41f66e19cf8907 xt/release/unused-vars.t
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG/MacGPG2 v2.0.12 (Darwin)
+Version: GnuPG v1
 
-iEYEARECAAYFAkw7rOEACgkQVCwRwOvSdBh4XwCfRasi0vD7xrRV/bQQLGZ4pDpd
-GBcAn1lHe20qX1zvUB96UD1uXy12ERI0
-=irHr
+iEYEARECAAYFAlRSRU4ACgkQ34Hwf+GwC4xB0gCgnQ8OJlvuD4o8DXEvV+bmDWMF
+6NAAoNi4PeXwrC3amQpBKPx8xlN+htCs
+=m5jK
 -----END PGP SIGNATURE-----

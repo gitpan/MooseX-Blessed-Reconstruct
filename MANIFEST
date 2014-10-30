@@ -1,8 +1,18 @@
+Build.PL
+CONTRIBUTORS
 Changes
+INSTALL
+LICENSE
+MANIFEST
+META.json
+META.yml
+README
+README.mkdn
+SIGNATURE
+cpanfile
+doap.xml
 lib/MooseX/Blessed/Reconstruct.pm
-Makefile.PL
-MANIFEST			This list of files
-MANIFEST.SKIP
+t/00-compile.t
+t/000-report-versions-tiny.t
 t/basic.t
-META.yml                                 Module meta-data (added by MakeMaker)
-SIGNATURE                                Public-key signature (added by MakeMaker)
+xt/release/unused-vars.t
