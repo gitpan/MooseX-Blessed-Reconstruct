@@ -58,7 +58,7 @@
    "provides" : {
       "MooseX::Blessed::Reconstruct" : {
          "file" : "lib/MooseX/Blessed/Reconstruct.pm",
-         "version" : "0.5"
+         "version" : "1.00"
       }
    },
    "release_status" : "stable",
@@ -73,7 +73,7 @@
          "web" : "https://github.com/yanick/moosex-blessed-reconstruct"
       }
    },
-   "version" : "0.5",
+   "version" : "1.00",
    "x_authority" : "cpan:YANICK",
    "x_contributors" : [
       "Jesse Luehrs <doy@tozt.net>",

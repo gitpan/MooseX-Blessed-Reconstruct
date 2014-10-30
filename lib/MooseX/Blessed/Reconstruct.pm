@@ -3,7 +3,7 @@ BEGIN {
   $MooseX::Blessed::Reconstruct::AUTHORITY = 'cpan:YANICK';
 }
 # ABSTRACT: A L<Data::Visitor> for creating Moose objects from blessed placeholders
-
+$MooseX::Blessed::Reconstruct::VERSION = '1.00';
 
 use Moose;
 
@@ -16,8 +16,6 @@ use Data::Visitor 0.21; # n-arity visit
 use Scalar::Util qw(reftype);
 
 use namespace::clean -except => 'meta';
-
-our $VERSION = "0.03";
 
 extends qw(Data::Visitor);
 
@@ -93,7 +91,7 @@ MooseX::Blessed::Reconstruct - A L<Data::Visitor> for creating Moose objects fro
 
 =head1 VERSION
 
-version 0.5
+version 1.00
 
 =head1 SYNOPSIS
 

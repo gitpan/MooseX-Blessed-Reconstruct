@@ -19,7 +19,7 @@ my %module_build_args = (
     "Jonathan Rockway <jrockway\@cpan.org>"
   ],
   "dist_name" => "MooseX-Blessed-Reconstruct",
-  "dist_version" => "0.5",
+  "dist_version" => "1.00",
   "license" => "perl",
   "module_name" => "MooseX::Blessed::Reconstruct",
   "recommends" => {},

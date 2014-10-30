@@ -4,7 +4,7 @@ MooseX::Blessed::Reconstruct - A [Data::Visitor](https://metacpan.org/pod/Data::
 
 # VERSION
 
-version 0.5
+version 1.00
 
 # SYNOPSIS
 

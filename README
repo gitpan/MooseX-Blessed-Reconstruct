@@ -3,7 +3,7 @@ NAME
     objects from blessed placeholders
 
 VERSION
-    version 0.5
+    version 1.00
 
 SYNOPSIS
             use MooseX::Blessed::Reconstruct;
